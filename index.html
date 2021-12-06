@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="wrap">
+
+        <div class="header">
+            <h1><a href="index.html">Nationak Park</a></h1>
+            <ul class="menu">
+                <li><a class="menu-item" href="#alert"><svg  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-exclamation-triangle">
+                    <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
+                    <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"/>
+                  </svg>Alert</a></li>
+                <li><a class="menu-item" href="#info"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 330" style="enable-background:new 0 0 330 330" xml:space="preserve">
+                    <path d="M165 .008C74.019.008 0 74.024 0 164.999c0 90.977 74.019 164.992 165 164.992s165-74.015 165-164.992C330 74.024 255.981.008 165 .008zm0 299.984c-74.439 0-135-60.557-135-134.992S90.561 30.008 165 30.008s135 60.557 135 134.991c0 74.437-60.561 134.993-135 134.993z"/>
+                    <path d="M165 130.008c-8.284 0-15 6.716-15 15v99.983c0 8.284 6.716 15 15 15s15-6.716 15-15v-99.983c0-8.283-6.716-15-15-15zm0-59.997c-3.95 0-7.811 1.6-10.61 4.39-2.79 2.79-4.39 6.66-4.39 10.61s1.6 7.81 4.39 10.61c2.79 2.79 6.66 4.39 10.61 4.39s7.81-1.6 10.609-4.39c2.79-2.8 4.391-6.66 4.391-10.61s-1.601-7.82-4.391-10.61A15.12 15.12 0 0 0 165 70.011z"/>
+                  </svg>Info</a></li>
+                <li>
+                    <a class="dropMenu" href="#drop"><svg class="mountain" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 491.531 491.531" style="enable-background:new 0 0 491.531 491.531" xml:space="preserve">
+                        <path d="m382.835 198.989-29.591 64.08-94.81-201.245-82.526 175.163-42.555-90.327L0 429.707h491.531L382.835 198.989zm.182 47.313 22.093 46.895c-2.268 1.565-4.233 3.337-6.025 4.958-4.551 4.118-7.838 7.094-14.821 7.094s-10.271-2.976-14.822-7.094c-2.196-1.987-4.653-4.2-7.61-5.979l21.185-45.874zm-91.302-66.907c-4.421 2.333-8.011 5.575-11.171 8.436-6.124 5.542-11.412 10.329-22.014 10.329s-15.891-4.787-22.014-10.329c-3.197-2.895-6.833-6.182-11.326-8.521l33.243-70.559 33.282 70.644zm-124.378 86.326c-4.044 2.321-7.434 5.382-10.606 8.253-6.487 5.871-12.089 10.941-23.378 10.941s-16.891-5.07-23.378-10.941c-3.172-2.871-6.563-5.933-10.607-8.253l33.985-72.133 33.984 72.133zM31.531 409.707l59.246-125.751c1.641 1.146 3.465 2.753 5.777 4.846 7.513 6.8 17.803 16.113 36.799 16.113s29.286-9.313 36.799-16.113c2.311-2.092 4.135-3.698 5.776-4.845l59.243 125.75H31.531zm225.748 0-70.318-149.256 29.694-63.026c1.693 1.019 3.655 2.713 6.439 5.232 7.227 6.542 17.125 15.502 35.436 15.502s28.208-8.96 35.436-15.502c2.702-2.446 4.629-4.111 6.288-5.139l42.047 89.249-56.771 122.939h-28.251zm96.038-99.09a79.813 79.813 0 0 1 2.705 2.366c5.396 4.885 13.553 12.266 28.242 12.266s22.845-7.381 28.242-12.266c.493-.446.935-.841 1.355-1.212L460 409.707H307.559l45.758-99.09zm21.326-149.486 7.998 10.723 8.041-10.701c.039-.052 3.971-5.246 10.171-10.277 5.166-4.19 13.077-9.187 21.437-9.187v-20c-17.029 0-31.258 10.577-39.62 18.625-8.361-8.048-22.59-18.625-39.619-18.625v20c8.36 0 16.271 4.996 21.437 9.187 6.2 5.03 10.132 10.225 10.155 10.255z"/>
+                      </svg>Park Views</a>
+                    <ul class="parkViewDrop">
+                        <li><a href="#sequoia-forest">Sequoia Forest</a></li>
+                        <li><a href="#kings-canyon">Kings Canyon</a></li>
+                        <li><a href="#zumwalt-meadows">Zumwalt Meadows</a></li>
+                        <li><a href="#waterfalls">Waterfalls</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="banner">
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                    <div class="swiper-slide"><img src="https://i.imgur.com/94b2YhC.jpg" alt="Kings Canyon Lake"></div>
+                    <div class="swiper-slide"><img src="https://i.imgur.com/1M2Dqd3.jpg" alt="Sequoia Sunset"></div>
+                    <div class="swiper-slide"><img src="https://i.imgur.com/lAj0Bem.jpg" alt="Sequoia Tunnel"></div>
+                    <div class="swiper-slide"><img src="https://i.imgur.com/eL2ujuu.jpg" alt="Sequoia Forest"></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+  
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+  
+                
+            </div>
+            <h2>Sequoia & Kins Canyon <br>National Park</h2>
+
+        </div>
+
+        <div class="content">
+            <div class="alert" id="alert">
+                <h2>ALERTS IN EFFECT</h2>
+                <div class="alert-severity">
+                    Park Closures
+                </div>
+                <ul class="alert-content">
+                    <li>
+                        <div class="alert-icon park-closures">
+                            <i class="fas fa-stop-circle"></i>
+                        </div>
+                        <div class="alert-item park-closures">
+                            <h3>Sequoias Are Only Accessible Via Kings Canyon National Park</h3>
+                            <p>If you wish to see giant sequoia trees, please enter the Kings Canyon Entrance along CA Highway 180. You cannot reach sequoia trees from the entrance to Sequoia Park along Highway 198. The Generals Highway between Kings Canyon and Sequoia is closed.
+                        </p>
+                        </div>
+                        
+                    </li>
+
+                    <li>
+                        <div class="alert-icon park-closures">
+                            <i class="fas fa-stop-circle"></i>
+                        </div>
+                        <div class="alert-item park-closures">
+                            <h3>Facilities, Services Closed Due to KNP Complex Wildfire
+                            </h3>
+                            <p>Many roads, lodges, and services are closed in both parks. Expect limited access and bring everything you need for your visit.
+                            </p>
+                        </div>
+                        
+                    </li>
+                </ul>
+
+                <div class="alert-severity">
+                    Caution
+                </div>
+                <ul class="alert-content caution">
+                    <li>
+                        <div class="alert-icon">
+                            <i class="far fa-hand-paper"></i>
+                        </div>
+                        <div class="alert-item caution">
+                            <h3>Protect Wildlife-Drive Slow and Watch for Wildlife on Roads
+                            </h3>
+                            <p>Due to the recent closure of the Generals Highway from the wildfire, park animals have not had to share the road with visitors for some time. Wildlife have been active on roads. Always follow the speed limit and watch for animals traveling on the road.</p>
+                        </div>
+                        
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="info" id="info">
+                <h2 class="content-title">Basic Information</h2>
+
+
+                <div class="info-container">
+                    <ul class="info-content">
+                    <li><a href="#">Physical Address ></a>
+                        <p>47050 Generals Highway<br>Three Rivers, CA 93271</p>
+                    </li>
+                    <li><a href="#">Directions ></a>
+                        <p>Two highways enter the parks. Hwy 180 from Fresno leads east to Kings Canyon National Park, then continues 30 miles east to Cedar Grove. Hwy 198 from Visalia leads east to Sequoia National Park via Three Rivers. Inside the parks, Highway 198 becomes the Generals Highway, which connects 198 to 180. Vehicles over 22-feet long should enter the parks via Highway 180. In winter, the Generals Highway between the parks often closes. Chains may be required on park roads. No roads cross these parks east to west.</p>
+                    </li>
+                    <li><a href="#">Weather ></a>
+                        <p>Because of the extreme elevation range in these parks, weather conditions vary widely between areas. In summer, the sequoia groves have comfortable temperatures and the foothills are hot and dry. Snow lingers on high-mountain passes well into summer. In fall, some areas close or reduce their hours. Winter brings snow to sequoia groves and rain to the foothills. Be prepared for tire chain requirements. Spring is a great time to hike in the foothills and snow begins to melt at higher elevations.</p>
+                    </li>
+                    <li><a href="#">Fees & Passes ></a>
+                        <p><span>Vehicle Pass - $35.00</span><br>This pass is valid for 1-7 days and includes everyone traveling in a single vehicle for Sequoia & Kings Canyon National Parks and Hume Lake District of Sequoia National Forest/Giant Sequoia National Monument.</p>
+                    </li>
+                    <li><a href="#">Visitor Centers ></a>
+                        <p>This visitor center is one mile past the Ash Mountain entrance station along the Generals Highway. Stop here for information, maps, books, gifts, and restrooms. Browse exhibits about the ecology and human history of the foothills, and join a free ranger-led program.</p>
+                    </li>
+                    <li><a href="#">Internet & Cellular Access ></a>
+                        <p>Free public WiFi is offered by the park at two visitor centers: Kings Canyon Visitor Center in Grant Grove Village, and Foothills Visitor Center near the Sequoia park entrance. No password is needed. WiFi is also available for guests of park lodges. Cell service varies in the park but is very limited. AT&T service is available near the Sequoia Park entrance. Verizon service is available in the Grant Grove area. Service is occasionally available in other areas, depending on conditions.</p>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="park-views">
+                <h2 class="content-title">Park Views</h2>
+                <div class="park-views-section" id="sequoia-forest">
+                    <h3>Sequoia Forest</h3>
+                    <div class="park-views-images">
+                        <a href="https://i.imgur.com/3bhmpqO.jpg" data-lightbox="forest-set" data-title="Sequoia Forest" data-alt="Sequoia Forest"><img src="https://i.imgur.com/r9Ncnx3.jpg" alt="Sequoia Forest"></a>
+
+                        <a href="https://i.imgur.com/CBNBn14.jpg" data-lightbox="forest-set" data-title="Sequoia Forest" data-alt="Sequoia Forest"><img src="https://i.imgur.com/lKs6zuZ.jpg" alt="Sequoia Forest"></a>
+
+                        <a href="https://i.imgur.com/6tG99Iq.jpg" data-lightbox="forest-set" data-title="Sequoia Forest" data-alt="Sequoia Forest"><img src="https://i.imgur.com/7bHNqvC.jpg" alt="Sequoia Forest"></a>
+                    </div>
+                    
+                </div>
+
+              
+                <div class="park-views-section" id="kings-canyon">
+                    <h3>Kings Canyon</h3>
+                    <div class="park-views-images">
+                        <a href="https://i.imgur.com/gNGDW6e.jpg" data-lightbox="Kings-Canyon-set" data-title="Kings Canyon" data-alt="Kings Canyon"><img src="https://i.imgur.com/YnFASUo.jpg" alt="Kings Canyon"></a>
+    
+                        <a href="https://i.imgur.com/uFQ0Qb8.jpg" data-lightbox="Kings-Canyon-set" data-title="Kings Canyon" data-alt="Kings Canyon"><img src="https://i.imgur.com/dIOyV8I.jpg" alt="Kings Canyon"></a>
+    
+                        <a href="https://i.imgur.com/bp5D3BM.jpg" data-lightbox="Kings-Canyon-set" data-title="Kings Canyon" data-alt="Kings Canyon"><img src="https://i.imgur.com/JPsdMY6.jpg" alt="Kings Canyon"></a>
+                    </div>
+                        
+                </div>
+
+                <div class="park-views-section" id="zumwalt-meadows">
+                    <h3>Zumwalt Meadows</h3>
+                    <div class="park-views-images">
+                        <a href="https://i.imgur.com/uZ03wAx.jpg" data-lightbox="Zumwalt-Meadows-set" data-title="Zumwalt Meadows" data-alt="Zumwalt Meadows"><img src="https://i.imgur.com/nDtRDGE.jpg" alt="Zumwalt Meadows"></a>
+    
+                        <a href="https://i.imgur.com/JgUaq74.jpg" data-lightbox="Zumwalt-Meadows-set" data-title="Zumwalt Meadows" data-alt="Zumwalt Meadows"><img src="https://i.imgur.com/8dXv7bf.jpg" alt="Zumwalt Meadows"></a>
+    
+                        <a href="https://i.imgur.com/g8ih4s7.jpg" data-lightbox="Zumwalt-Meadows-set" data-title="Zumwalt Meadows" data-alt="Zumwalt Meadows"><img src="https://i.imgur.com/5GVu7J5.jpg" alt="Zumwalt Meadows"></a>
+                    </div>
+                        
+                </div>
+
+                <div class="park-views-section" id="waterfalls">
+                    <h3>Waterfalls</h3>
+                    <div class="park-views-images">
+                        <a href="https://i.imgur.com/6Sm4gRr.jpg" data-lightbox="waterfall-set" data-title="Waterfalls" data-alt="Waterfalls"><img src="https://i.imgur.com/ZmBraLX.jpg" alt="Waterfalls"></a>
+    
+                        <a href="https://i.imgur.com/G28Sxuy.jpg" data-lightbox="waterfall-set" data-title="Waterfalls" data-alt="Waterfalls"><img src="https://i.imgur.com/EAIgZq6.jpg" alt="Waterfalls"></a>
+    
+                        <a href="https://i.imgur.com/H4ackll.jpg" data-lightbox="waterfall-set" data-title="Waterfalls" data-alt="Waterfalls"><img src="https://i.imgur.com/SLn4J6V.jpg" alt="Waterfalls"></a>
+                        
+                    </div>
+                        
+                </div>
+    
+                    
+            </div>
+
+        </div>
+
+        <div class="footer">
+
+            <div class="contact">
+
+                <div class="contact-info-container">
+                    <h3>Contact the park</h3>
+    
+                    <div class="contact-info">
+                        <div class="address">
+                            <h4>Mailiing Address:</h4>
+                            <p>47050 Generals Highway<br>Three Rivers , CA 93271</p>
+                        </div>
+                        <div class="number">
+                            <h4>Phone:</h4>
+                            <p>559 565-3341</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="follow-us">
+                    <h3>STAY CONNECTED</h3>
+                    <ul class="social">
+                        <li><a target="_blank" href="https://www.facebook.com/SequoiaKingsNPS"><i class="fab fa-facebook-square" style="color: #4267B2;"></i>Facebook</a></li>
+                        <li><a target="_blank" href="https://twitter.com/sequoiakingsnps"><i class="fab fa-twitter" style="color: #1DA1F2;"></i>Twitter</a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/sequoiakingsnps/"><i class="fab fa-instagram" style="color: #C13584;"></i>Instagram</a></li>
+                        <li><a target="_blank" href="https://www.youtube.com/channel/UCuoCoXWvwVpQTIUc7Aviewg"><i class="fab fa-youtube" style="color: #FF0000;"></i>YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="app">
+                <div class="app-link">
+                    <h3>Download the official NPS app before your next visit</h3>
+                    <a target="_blank" href="https://apps.apple.com/us/app/national-park-service/id1549226484"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on Apple store"></a>
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=gov.nps.mobileapp"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google play" style="width: 135px; height: 40px;"></a>
+                </div>
+
+                <div class="app-logo">
+                    <img src="https://i.imgur.com/H0Fex67.png" alt="">
+                </div>
+            </div>
+
+            <div class="department">
+                <p>National Park Service U.S. Department of the Interior</p>
+            </div>
+        </div>
+    
+        <div class="top-arrow">
+            <i class="fas fa-arrow-circle-up"></i>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/all.js"></script>
+</html>
