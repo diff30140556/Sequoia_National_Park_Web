@@ -49,6 +49,9 @@ $(document).ready(function () {
             disableOnInteraction: false,
           },
         effect: 'fade',
+        fadeEffect: {
+          crossFade: true
+         },
       
         // If we need pagination
         pagination: {
