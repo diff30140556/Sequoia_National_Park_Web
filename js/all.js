@@ -1,15 +1,13 @@
 $(document).ready(function () {
-
+  const initialWidth = window.innerWidth;
 // rwd
   detectWidth();
   function detectWidth(){
     const width = window.innerWidth;
     
-    if (window.innerWidth == width){
+    if (initialWidth == width){
       return;
-    }
-    
-    if(width>768){
+    }else if(width>768){
       $('.swiper-button-prev').show();
       $('.swiper-button-next').show();
       $('.menu').removeClass('rwd-menu');
@@ -54,7 +52,6 @@ $(document).ready(function () {
 // rwd
   var resizeTimer = null;
   $(window).resize(function(){
-    const width = window.innerWidth;
     if(resizeTimer){
         clearTimeout(resizeTimer);
     }
