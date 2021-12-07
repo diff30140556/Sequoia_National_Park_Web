@@ -497,9 +497,9 @@ img{
 
 @media only screen and (max-width:768px){
     
-    .wrap{
+/*     .wrap{
       position: relative;
-    }
+    } */
     
     .header{
         display: flex;
@@ -620,13 +620,13 @@ img{
     }
 
   .close-menu-animation{
-    animation: close-menu 0.1s ease-in-out;
+    animation: close-menu 0.1s linear;
     animation-fill-mode: forwards;
     }
   
     @keyframes close-menu{
         0% {
-              transform: scale(1);
+              transform: scale(0);
         }
         100%{
               transform: scale(0);
