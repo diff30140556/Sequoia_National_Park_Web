@@ -158,9 +158,7 @@ $('.menu').on('click','a', function (e) {
 
   $('.open-menu').click(function (e) { 
     e.preventDefault();
-    document.addEventListener('touchmove', function (e) {
-    e.preventDefault()
-})
+    document.body.style.overflow = 'hidden';
     $('.menu').show().addClass('open-menu-animation').removeClass('close-menu-animation');
     $('.close-menu').toggle();
     $('.open-menu').toggle();
@@ -168,6 +166,7 @@ $('.menu').on('click','a', function (e) {
 
   $('.close-menu').click(function (e) { 
     e.preventDefault();
+    document.body.style.overflow = 'visible';
     $('.menu').addClass('close-menu-animation').removeClass('open-menu-animation');
     $('.close-menu').toggle();
     $('.open-menu').toggle();
