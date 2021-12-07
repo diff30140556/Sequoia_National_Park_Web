@@ -5,6 +5,8 @@ $(document).ready(function () {
   function detectWidth(){
     const width = window.innerWidth;
     if(width>768){
+      $('.swiper-button-prev').show();
+      $('.swiper-button-next').show();
       $('.menu').removeClass('rwd-menu');
       $('.open-menu').removeClass('open-menu-rwd');
       $('.close-menu').removeClass('close-menu-rwd');
@@ -12,6 +14,8 @@ $(document).ready(function () {
       $('.close-menu').hide();
       $('.menu').show().css('display','flex');
     } else if(width<=768){
+      $('.swiper-button-prev').hide();
+      $('.swiper-button-next').hide();
       $('.menu').addClass('rwd-menu');
       $('.open-menu').addClass('open-menu-rwd');
       $('.close-menu').addClass('close-menu-rwd');
