@@ -170,11 +170,13 @@ img{
 .swiper {
     max-width: 1400px;
     max-height: 580px;
-  
+    min-height: 300px;
+
 }
 
 .swiper-wrapper{
   max-height: 580px;
+  min-height: 300px;
 }
 
 .swiper-slide{
@@ -517,7 +519,7 @@ img{
     .banner h2{
         padding: 5px 20px;
         font-size: 22px;
-        line-height: 30px;
+        line-height: 26px;
     }
 
     .top-arrow i{
@@ -618,7 +620,7 @@ img{
     }
 
   .close-menu-animation{
-    animation: close-menu 0.2s ease-in-out;
+    animation: close-menu 0.1s ease-in-out;
     animation-fill-mode: forwards;
     }
   
