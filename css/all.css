@@ -68,7 +68,7 @@ img{
 .header{
     display: flex;
     justify-content: space-between;
-    padding: 0px 80px;
+    padding: 0px 10%;
     background: #000;
 }
 
@@ -126,6 +126,28 @@ img{
     border-top: 1px solid rgba(255, 255, 255, 0.4);
     padding: 15px;
     background: rgba(0, 0, 0, 0.6)
+}
+
+.close-menu,
+.open-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 15px;
+    display: block;
+    height: 100%;
+    z-index: 10000;
+}
+
+.fa-window-close,
+.fa-bars{
+    color: #fff;
+    font-size: 32px;
+}
+
+.close-menu,
+.open-menu{
+    display: none;
 }
 
 .header h1 a{
@@ -464,4 +486,189 @@ img{
     font-size: 16px;
     text-align: center;
     padding: 15px 0px;
+}
+
+
+
+@media only screen and (max-width:768px){
+  
+    
+    .header{
+        display: flex;
+        justify-content: center;
+    }
+
+    .content{
+        padding: 30px 20px;
+    }
+
+    .top-arrow{
+        right: 0;
+        height: 35px;
+        width: 35px;
+    }
+
+    .top-arrow i{
+        font-size: 35px;
+    }
+
+    .park-views-images a{
+        width: 80%;
+    }
+
+    .park-views-images a img{
+        width: 100%;
+    }
+
+    .contact{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0px;
+    }
+
+    .contact-info-container{
+        margin-bottom: 80px;
+    }
+
+    .contact-info{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info-container h3,
+    .follow-us h3{
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .contact-info h4{
+        text-align: center;
+    }
+
+    .address{
+        margin-bottom: 40px;
+    }
+
+    .app{
+        flex-direction: column;
+        padding: 30px 0px;
+    }
+
+    .app-link{
+        margin-right: unset;
+        text-align: center;
+        width: 95%;
+    }
+
+    .alert-content{
+        padding-left: unset;
+    }
+
+    .app-link h3{
+        font-size: 25px;
+    }
+
+    .app-logo{
+        margin-top: 40px;
+    }
+
+    .app-logo img{
+        width: 250px;
+    }
+
+    .menu{
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    bottom: 0;
+    padding-top: 50px;
+    background: rgba(0, 60, 157, 0.94);
+    transform-origin: top right;
+  }
+
+  .open-menu-animation{
+      animation: open-menu 0.2s ease-in-out;
+      animation-fill-mode: forwards;
+  }
+
+    @keyframes open-menu{
+        0% {
+            transform: scale(0);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+
+  .close-menu-animation{
+    animation: close-menu 0.2s ease-in-out;
+    animation-fill-mode: forwards;
+    }
+  
+    @keyframes close-menu{
+        0% {
+              transform: scale(1);
+        }
+        100%{
+              transform: scale(0);
+        }
+    }
+
+  .open-menu{
+      display: block;
+  }
+
+  .menu li:nth-child(3) a{
+    width: 100%;
+  }
+  
+  .header{
+    padding: unset;
+  }
+  
+  .menu li a{
+    width: 100%;
+    padding-top: 30px; 
+    padding-bottom: 30px; 
+    border-right: unset;
+    font-size: 24px;
+  }
+  .menu li{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .dropMenu{
+    position: relative;
+  }
+
+  .parkViewDrop{
+    width: 100%;
+    top: 100%;
+  }
+  
+  .parkViewDrop li{
+    border: unset;
+    margin-bottom: unset;
+  }
+  
+  .parkViewDrop li a{
+    font-size: 19px;
+    padding-left: 20px;
+    padding-right: unset;
+    justify-content: center;
+    border: unset;
+    background: rgba(212, 212, 212, 0.15);
+    padding: 20px 0px;
+    font-weight: bold;
+   }
+
+  .parkViewDrop li:nth-child(Odd) a{
+    background: rgba(0, 0, 0, 0.3);
+    }
 }
