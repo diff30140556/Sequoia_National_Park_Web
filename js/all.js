@@ -4,8 +4,12 @@ $(document).ready(function () {
   detectWidth();
   function detectWidth(){
     const width = window.innerWidth;
+    
+    if (window.innerWidth == width){
+      return;
+    }
+    
     if(width>768){
-      alert("Hello! I am an alert box!!");
       $('.swiper-button-prev').show();
       $('.swiper-button-next').show();
       $('.menu').removeClass('rwd-menu');
@@ -15,7 +19,6 @@ $(document).ready(function () {
       $('.close-menu').hide();
       $('.menu').show().css('display','flex');
     } else if(width<=768){
-      alert("Hello! I am an alert");
       $('.swiper-button-prev').hide();
       $('.swiper-button-next').hide();
       $('.menu').addClass('rwd-menu');
