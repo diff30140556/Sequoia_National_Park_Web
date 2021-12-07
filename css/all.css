@@ -508,6 +508,12 @@ img{
         width: 35px;
     }
 
+    .banner h2{
+        padding: 5px 20px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
     .top-arrow i{
         font-size: 35px;
     }
