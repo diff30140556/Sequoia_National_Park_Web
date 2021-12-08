@@ -13,13 +13,13 @@ $(document).ready(function () {
       $('.close-menu').hide();
       $('.menu').show().css('display','flex');
     } else if(width<=768){
-      document.body.style.overflow = 'visible';
       $('.menu').addClass('rwd-menu');
       $('.open-menu').addClass('open-menu-rwd');
       $('.close-menu').addClass('close-menu-rwd');
       $('.open-menu').show();
       $('.close-menu').hide();
       if(initialWidth!==width){
+        document.body.style.overflow = 'visible';
         $('.menu').hide();  
       }
     }
