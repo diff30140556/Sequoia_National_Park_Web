@@ -4,7 +4,6 @@ $(document).ready(function () {
   detectWidth();
   function detectWidth(){
     const width = window.innerWidth;
-    
     if(width>768){
       document.body.style.overflow = 'visible';
       $('.menu').removeClass('rwd-menu');
@@ -20,7 +19,9 @@ $(document).ready(function () {
       $('.close-menu').addClass('close-menu-rwd');
       $('.open-menu').show();
       $('.close-menu').hide();
-      $('.menu').hide();
+      if(initialWidth!==width){
+        $('.menu').hide();  
+      }
     }
   }
 
