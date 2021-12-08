@@ -16,9 +16,10 @@ $(document).ready(function () {
       $('.menu').addClass('rwd-menu');
       $('.open-menu').addClass('open-menu-rwd');
       $('.close-menu').addClass('close-menu-rwd');
-      $('.open-menu').show();
-      $('.close-menu').hide();
+      
       if(initialWidth!==width){
+        $('.open-menu').show();
+        $('.close-menu').hide();
         document.body.style.overflow = 'visible';
         $('.menu').hide();  
       }
