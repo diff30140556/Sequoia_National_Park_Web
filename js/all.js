@@ -5,9 +5,7 @@ $(document).ready(function () {
   function detectWidth(){
     const width = window.innerWidth;
     
-    if (initialWidth == width){
-      return;
-    }else if(width>768){
+     if(width>768){
       $('.swiper-button-prev').show();
       $('.swiper-button-next').show();
       $('.menu').removeClass('rwd-menu');
