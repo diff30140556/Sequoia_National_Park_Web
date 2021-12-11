@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  
   const initialWidth = window.innerWidth;
 // 偵測網頁寬度，針對小尺寸螢幕顯示不同排版內容
   detectWidth();
@@ -25,26 +26,26 @@ $(document).ready(function () {
       }
     }
   }
-// 監聽網頁滾動，下滑到一定高度顯示右側返回頂部按鈕
-  window.onscroll = function(){
+// 監聽網頁滾動，下滑到指定元素(此處設定為Alert底部)顯示右側返回頂部按鈕
+  
 
-    const width = window.innerWidth;
-    const height = window.document.documentElement.scrollTop;
+  window.addEventListener('scroll', scroll)
+
+  function scroll(){
+    const windowHeight = document.documentElement.clientHeight
+    const targetRect = document.querySelector('.alert').getBoundingClientRect()
+    var threshold = 20 // 提前觸發的距離 
+    const targetBottom = targetRect.bottom//目標元素底部離視窗頂部距離
     const arrow = document.querySelector('.top-arrow');
-    if (width>760){
-      if (height>730){
+  console.log('1',targetBottom,'2',windowHeight);
+  
+      // 如果目標元素+目標高度小於視窗高度
+      // 表示已滚动到目標元素的底部
+      if(targetBottom < (windowHeight + threshold)) {
         arrow.classList.add('top-arrow-animation');
-      } else {
+      } else{
         arrow.classList.remove('top-arrow-animation');
       }
-    } else if(width<=760){
-      if (height>410){
-        arrow.classList.add('top-arrow-animation');
-      } else {
-        arrow.classList.remove('top-arrow-animation');
-      }
-    }
-    
   }
 
 // 監聽網頁尺寸變化，加上100ms延遲避免觸發過多效能過重
@@ -54,7 +55,8 @@ $(document).ready(function () {
         clearTimeout(resizeTimer);
     }
     resizeTimer = setTimeout(function(){
-      detectWidth();  
+      detectWidth();
+      scroll();
       },100)
     }
   )
