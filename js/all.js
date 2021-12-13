@@ -37,7 +37,6 @@ $(document).ready(function () {
     var threshold = 20 // 提前觸發的距離 
     const targetBottom = targetRect.bottom//目標元素底部離視窗頂部距離
     const arrow = document.querySelector('.top-arrow');
-  console.log('1',targetBottom,'2',windowHeight);
   
       // 如果目標元素+目標高度小於視窗高度
       // 表示已滚动到目標元素的底部
