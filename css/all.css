@@ -367,7 +367,8 @@ img{
     display: flex;
     justify-content: space-around;
     padding: 40px 120px;
-    background: url(https://www.nps.gov/common/commonspot/templates/assetsCT/images/bkg/topo_pattern.png) repeat;
+    background: url(https://www.nps.gov/common/uploads/hero_home/pwr/promo/FFD2042D-C861-8E44-F33291733D7E8D4E.jpg?mode=crop&quality=90&width=1200&height=350)center repeat;
+    background-size: cover;
 }
 
 .contact-info-container{
